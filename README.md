@@ -4,7 +4,7 @@ We implement from a panorama generator from scratch.
 
 ![alt text](src/results/mosaic_set2.jpg)
 
-![alt text](src/results/mosaic_set1.jpg)
+![alt text](src/results/mosaic_set1_dilated.jpg)
 
 ## Run
 ### Installation
