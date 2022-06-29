@@ -1,3 +1,4 @@
 
 gdown
 opencv-python
+matplotlib
