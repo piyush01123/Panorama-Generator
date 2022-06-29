@@ -2,7 +2,7 @@
 import os
 import glob
 import cv2
-from stitch import stitch_multiple_images_fast
+from stitch import stitch_multiple_images_fast,stitch_multiple_images
 from postprocess import dilate_and_save
 from utils import plot_image
 
@@ -14,3 +14,8 @@ from utils import plot_image
 # fp = "results/mosaic_set1.jpg"
 # fp_dilated = dilate_and_save(fp)
 # plot_image(fp_dilated)
+
+
+image_paths = glob.glob("data/images/Image Mosaicing/2_*.*")
+img_mosaic = stitch_multiple_images(image_paths, prefix="set2", max_iter=5000, threshold=2)
+cv2.imwrite("results/mosaic_set2.jpg", img_mosaic)
