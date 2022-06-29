@@ -1,6 +1,5 @@
 
-import cv2
-import numpy as np
+import cv2, numpy as np, matplotlib.pyplot as plt, os, glob
 
 
 def draw_common_points(img_A, img_B, points_used_A, points_used_B):
@@ -32,4 +31,25 @@ def draw_common_points(img_A, img_B, points_used_A, points_used_B):
         line_img = cv2.circle(line_img, (x1,y1),8,(0,0,255),-1)
         line_img = cv2.circle(line_img, (x2+w1,y2),8,(0,0,255),-1)
     return line_img
+
+def plot_image(fp):
+    """Utility function to plot an image in notebook"""
+    assert os.path.isfile(fp)
+    img = cv2.imread(fp)
+    plt.figure(figsize=(20,16))
+    plt.imshow(img[:,:,[2,1,0]])
+    plt.axis("off")
+
+def plot_multiple_images(file_paths):
+    """Utility function to plot multiple images vertically stacked"""
+    assert all([os.path.isfile(fp) for fp in file_paths])
+    n = len(file_paths)
+    plt.figure(figsize=(20,16))
+
+    for idx in range(n):
+        ax = plt.subplot(n,1,idx+1)
+        fp = file_paths[idx]
+        img = cv2.imread(fp)
+        ax.imshow(img[:,:,[2,1,0]])
+        plt.axis("off")
 
