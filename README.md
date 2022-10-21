@@ -5,18 +5,23 @@ We implement from a panorama generator from scratch.
 ## Example 1
 ### Original images:
 <img src="src/data/images/Image Mosaicing/1all.jpg" width="500" height="300">
+
 ### Panorama:
 <img src="src/results/mosaic_set1_dilated.jpg" width="500" height="300">
+
 
 ## Example 2
 ### Original images:
 <img src="src/data/images/Image Mosaicing/2all.jpg" width="500" height="300">
+
 ### Panorama:
 <img src="src/results/mosaic_set2.jpg" width="500" height="300">
+
 
 ## Example 3
 ### Original images:
 <img src="src/data/images/Image Mosaicing/5all.jpg" width="500" height="300">
+
 ### Panorama:
 <img src="src/results/mosaic_set5.jpg" width="500" height="300">
 
