@@ -38,6 +38,17 @@ cd src
 python run.py
 ```
 
+### Run with your own images
+Clone and go inside `src` directory. Put all your images in folder `images` and run this.
+
+```
+import os,glob,cv2
+from stitch import stitch_multiple_images_fast
+
+img_mosaic = stitch_multiple_images_fast(*sorted(glob.glob("images/*")))
+cv2.imwrite("result.jpg", img_mosaic)
+```
+
 ## Theory
 ### How to stitch two images
 
