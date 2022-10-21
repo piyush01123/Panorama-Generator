@@ -27,5 +27,10 @@ def main():
     img_mosaic = stitch_multiple_images_fast(image_paths, prefix="set4")
     cv2.imwrite("results/mosaic_set4.jpg", img_mosaic)
 
+    image_paths = [os.path.join(folder_path,file_name) for file_name in ["5_1.jpg", "5_2.jpg","5_3.jpg","5_4.jpg"]]
+    img_mosaic = stitch_multiple_images_fast(image_paths, prefix="set5")
+    cv2.imwrite("results/mosaic_set5.jpg", img_mosaic)
+
+
 if __name__=="__main__":
     main()
