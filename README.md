@@ -1,6 +1,6 @@
 
 # Panorama Generator
-We implement from a panorama generator from scratch.
+We implement a panorama generator from scratch.
 
 ## Example 1
 ### Original images:
