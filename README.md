@@ -1,6 +1,10 @@
 
 # Panorama Generator
-We implement a panorama generator from scratch.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/19518507/205267377-b3431763-4e24-4b05-8281-2e85599eb82b.png" height="250">
+</p>
+
+Panorama generator from multiple images covering a scene from same camera center using homography.
 
 ## Example 1
 ### Original images:
